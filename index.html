@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <div class="container">
+        <div class="changeTheme">
+            <h3>calc</h3>
+            
+                <div>
+                    <p>Thème <span id="theme">sombre</span></p>
+                    
+                    <label class="toggle">
+                        <input type="checkbox" value="true" id="toggle" checked/>
+                        <span></span>
+                        
+                    </label>
+            </div>
+        </div>
+        
+        <table>
+            <tr>
+                <td><span class="view">0</span></td>
+            </tr>
+        </table>
+            
+        <div class="frame">
+           <table>
+            
+            <tr>
+                <td><input type="button" value="7" class="number"></td>
+                <td><input type="button" value="8" class="number"></td>
+                <td><input type="button" value="9" class="number"></td>
+                <td><input type="button" value="DEL" class="fonction delBtn"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" class="number"></td>
+                <td><input type="button" value="5" class="number"></td>
+                <td><input type="button" value="6" class="number"></td>
+                <td><input type="button" value="+" class="operator"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" class="number"></td>
+                <td><input type="button" value="2" class="number"></td>
+                <td><input type="button" value="3" class="number"></td>
+                <td><input type="button" value="-" class="operator"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." class="float"></td>
+                <td><input type="button" value="0" class="number" ></td>
+                <td><input type="button" value="/" class="operator"></td>
+                <td><input type="button" value="x" class="operator"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="RESET" class="fonction lastBtn reset"></td>
+                <td colspan="2"><input type="button" value="=" class="fonction lastBtn result" ></td>
+                
+            </tr>
+           </table>
+        </div>
+    </div>
+
+  <script src="assets/js/script.js"></script>  
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    background-color: #3B4664;  
+    display: flex;
+    justify-content: center;
+   
+}
+
+.container{
+    margin-top: 8%;
+}
+
+.view{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    height: 70px;
+    width: 317px;
+
+    background-color: #181F32;
+    border-radius: 6px;
+    margin-bottom: 2%;
+
+    color: whitesmoke;
+    padding-right: 3%;
+    
+}
+
+.changeTheme{
+    width: 317px;
+    height: 80px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    color:whitesmoke;
+    
+
+}
+
+.view, .changeTheme,input{
+    font-size: 20px;
+    font-family:League Spartan,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.toggle{
+    margin-top: 10%;
+}
+
+h3{
+    padding-left: 3%;
+}
+/* coeur de la calcularice */
+input{
+    width: 70px;
+    height: 40px;
+    color: #484D60;
+    background-color: lightgray;
+
+    border-radius: 5px;
+    border-width: 3px;
+    border-color: lightgray;
+    border-style: none none outset;
+    cursor: pointer;
+}
+
+input:active{
+    background-color: rgb(173, 170, 170);
+   
+}
+
+.frame{
+    background-color: #252D44;
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+
+    height: 350px;
+    width: 330px;
+
+}
+
+.lastBtn{
+
+    width: 100%;
+}
+
+.lastBtn[value="RESET"]{
+    background-color: #F96C5B;
+    border-color: #F96C5B;
+    color: whitesmoke;
+}
+
+.lastBtn[value="="],.delBtn{
+    background-color:lightseagreen;
+    border-color: lightseagreen;
+    color: whitesmoke;
+}
+
+.lastBtn[value="RESET"]:active{
+    background-color: #df4231;
+}
+
+.lastBtn[value="="]:active{
+    background-color: rgb(6, 161, 66);
+}
+
+
+/* bouton changement de thème */
+
+.changeTheme div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.toggle{
+    display: inline-block;
+	position: relative;
+	width: 50px;
+	height: 20px;
+	cursor: pointer;
+	overflow: hidden;
+   
+}
+
+.toggle input {
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	width: 0;
+	height: 0;
+}
+
+.toggle input + span {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: #6c9bbd;
+   border-radius: 20px;
+}
+
+.toggle input:checked + span {
+	background: #34b6bfc2;
+}
+
+.toggle input + span:before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 4px;
+	width: 15px;
+	height: 15px;
+	background: white;
+	border-radius: 50%;
+	transform: translateY(-50%);
+	transition: all .5s;
+}
+
+.toggle input:checked + span:before {
+	left: 32px;
+}
